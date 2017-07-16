@@ -97,3 +97,9 @@ globals:
 ```
 
 Como esto no pretende ser un manual avanzado recomiendo leer la documentación oficial de MapProxy en http://mapproxy.org/
+
+## Acceder a tu TMS
+
+MapProxy genera los TMS como se puede ver en el siguiente ejemplo:
+
+tms:http://tu-servidor:8080/tiles/1.0.0/osm/EPSG3857/{zoom}/{x}/{-y}.png
