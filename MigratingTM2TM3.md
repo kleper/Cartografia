@@ -113,7 +113,8 @@ sudo -u postgres psql
 ~~~bash
 sudo -u postgres psql
 \c hotnew
-DROP SALTER TABLE hotnew.users SET SCHEMA public;
+DROP SCHEMA hotold CASCADE ;
+ALTER TABLE hotnew.users SET SCHEMA public;
 ALTER TABLE hotnew.licenses SET SCHEMA public;
 ALTER TABLE hotnew.messages SET SCHEMA public;
 ALTER TABLE hotnew.priority_areas SET SCHEMA public;
@@ -128,6 +129,8 @@ ALTER TABLE hotnew.tasks SET SCHEMA public;
 ALTER TABLE hotnew.users_licenses SET SCHEMA public;
 ALTER TABLE hotnew.spatial_ref_sys SET SCHEMA public;
 ALTER TABLE hotnew.alembic_version SET SCHEMA public;CHEMA hotold CASCADE;
+
+~~~
 
 ~~~
 
