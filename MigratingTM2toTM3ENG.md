@@ -77,7 +77,7 @@ sudo -u postgres psql
 \c hotnew
 \i backupTM2OLDDB.sql
 - Then we execute the following procedure to move the tables of the TM2 to the schema hotold
-LTER TABLE alembic_version SET SCHEMA hotold;
+ALTER TABLE alembic_version SET SCHEMA hotold;
 ALTER TABLE areas SET SCHEMA hotold;          
 ALTER TABLE label SET SCHEMA hotold;
 ALTER TABLE label_translation SET SCHEMA hotold;
@@ -128,7 +128,7 @@ ALTER TABLE hotnew.task_history SET SCHEMA public;
 ALTER TABLE hotnew.tasks SET SCHEMA public;
 ALTER TABLE hotnew.users_licenses SET SCHEMA public;
 ALTER TABLE hotnew.spatial_ref_sys SET SCHEMA public;
-ALTER TABLE hotnew.alembic_version SET SCHEMA public;CHEMA hotold CASCADE;
+ALTER TABLE hotnew.alembic_version SET SCHEMA public;
 
 ~~~
 
